@@ -6,7 +6,7 @@
       'MenuButton-hasNotification': hasNotification,
     }"
   >
-    <!-- <img src="../../../dist/discord.svg" alt="discord" v-if="isHome"> -->
+    <img :src="svgurl" alt="discord" />
     <div class="mentions" v-if="mentions">
       {{ formattedCount }}
     </div>
@@ -22,6 +22,12 @@ export default defineComponent({
     isHome: Boolean,
     hasNotification: Boolean,
     mentions: Number,
+    menuitem: Number,
+  },
+  methods: {
+    sortmenu() {
+      console.log(menuitem);
+    },
   },
   computed: {
     formattedCount() {
@@ -32,6 +38,9 @@ export default defineComponent({
         return s.replace('.0', '') + 'K';
       }
     },
+    svgurl() {
+      return `/public/menu/${this.menuitem}.svg`;
+    },
   },
 });
 </script>
@@ -41,8 +50,8 @@ export default defineComponent({
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   margin-bottom: 8px;
   background: var(--primary);
   cursor: pointer;
@@ -56,7 +65,7 @@ export default defineComponent({
   }
 
   img {
-    width: 24px;
+    width: 36px;
     color: var(--white);
   }
 

@@ -3,10 +3,10 @@
     <LeftSideMenu />
     <MenuOptionName />
     <ListViewer />
-    <!-- <FooterFixedInfo />
-    <MenuOptionHeader />
-    <RouterView />
-    <RightSideMenu /> -->
+    <UserInfo />
+    <PageInfo />
+    <MainContent />
+    <RightSidePanel />
   </div>
 </template>
 
@@ -15,10 +15,22 @@ import { defineComponent } from 'vue';
 import LeftSideMenu from '../components/Left-Side-Menu/index.vue';
 import MenuOptionName from '../components/Menu-Option-Name/index.vue';
 import ListViewer from '../components/List-Viewer/index.vue';
+import UserInfo from '../components/User-Info/index.vue';
+import PageInfo from '../components/Page-Info/index.vue';
+import MainContent from '../components/Main-Content/index.vue';
+import RightSidePanel from '../components/Right-Side-Panel/index.vue';
 
 export default defineComponent({
   name: 'MainLayout',
-  components: { LeftSideMenu, MenuOptionName, ListViewer },
+  components: {
+    LeftSideMenu,
+    MenuOptionName,
+    ListViewer,
+    UserInfo,
+    PageInfo,
+    MainContent,
+    RightSidePanel,
+  },
   setup() {
     return {};
   },
@@ -28,8 +40,8 @@ export default defineComponent({
 #grid {
   display: grid;
   height: 100vh;
-  grid-template-columns: 71px 240px auto 240px;
-  grid-template-rows: 46px auto 52px;
+  grid-template-columns: 71px 20% auto 20%;
+  grid-template-rows: 46px auto 250px;
   grid-template-areas:
     'SL SN CI CI'
     'SL CL CD UL'

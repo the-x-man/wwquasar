@@ -1,0 +1,17 @@
+
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="250" height="250" viewBox="375 400 325 180" xml:space="preserve">
+<defs>
+</defs>
+<g transform="matrix(1.96 0 0 1.96 540 540)"  >
+<g style=""   >
+		
+		<g transform="matrix(1 0 0 1 0 -27.09)"  >
+<linearGradient id="SVGID_color-16037139316_13" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 0 0)"  x1="65" y1="235" x2="485" y2="235">
+<stop offset="0%" style="stop-color:rgb(237,66,100);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(255,237,188);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 10; fill: url(#SVGID_color-16037139316_13); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-275, -207.91)" d="M 319.37966 155.471 L 348.04229 155.471 L 314.85781 260.42145 L 286.55985 260.42145 L 275.03646 229.42497 L 262.71081 260.42145 L 259.79348999999996 260.42145 L 275.03646 221.83995 L 288.38318 257.72294 L 312.81570999999997 257.72294 L 344.32271999999995 158.16953 L 321.34885999999995 158.16953 L 299.90658999999994 225.55953 L 275.03646999999995 161.15978 L 236.74669999999995 260.42145 L 235.50683999999995 260.42145 L 201.95770999999996 155.471 L 230.69327999999996 155.471 L 249.07237999999995 213.08799 L 247.68665999999996 217.68277 L 228.65116999999995 158.16952 L 205.67730999999995 158.16952 L 236.30912999999995 254.00335 L 274.3071699999999 155.39807000000002 L 275.6928899999999 155.39807000000002 L 299.6878099999999 217.31810000000002 z" stroke-linecap="round" />
+</g>	
+</g>
+</g>
+</svg>
