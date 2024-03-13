@@ -40,7 +40,7 @@ export default defineComponent({
 #grid {
   display: grid;
   height: 100vh;
-  grid-template-columns: 71px 20% auto 20%;
+  grid-template-columns: 75px 20% auto 20%;
   grid-template-rows: 46px auto 250px;
   grid-template-areas:
     'SL SN CI CI'

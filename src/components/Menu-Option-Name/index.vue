@@ -1,41 +1,21 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="container">
-    <div class="title">Song Lyrics</div>
-    <div class="icon">
-      <q-icon size="1.5em" name="font_download" />
-    </div>
-  </div>
+  <!-- <SongMenuBar /> -->
+  <ScriptureMenuBar />
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import SongMenuBar from './songs/index.vue';
+import ScriptureMenuBar from './bible/index.vue';
 
 export default defineComponent({
   name: 'MenuOptionName',
-  components: {},
+  // eslint-disable-next-line vue/no-unused-components
+  components: { SongMenuBar, ScriptureMenuBar },
   setup() {
     return {};
   },
+  methods: {},
 });
 </script>
-<style scoped lang="scss">
-.container {
-  grid-area: SN;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--secondary);
-  padding: 0 11px 0 16px;
-  box-shadow: rgba(0, 0, 0, 0.8) 1px 0 0;
-  z-index: 2;
-}
-.title {
-  color: var(--white);
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.icon {
-  color: var(--white);
-}
-</style>
+<style scoped lang="scss"></style>

@@ -1,17 +1,18 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="container">
-    <MenuOption :menuitem="1" />
-    <div class="separator"></div>
+    <!-- <MenuOption :menuitem="1" />
+    <div class="separator"></div> -->
     <MenuOption :mentions="27890" :menuitem="2" />
     <MenuOption :mentions="10" :menuitem="4" />
     <MenuOption :mentions="20" :menuitem="3" />
-    <MenuOption :mentions="5" :menuitem="5" />
-    <MenuOption :mentions="20" :menuitem="6" />
-    <MenuOption :mentions="5" :menuitem="7" />
+    <MenuOption :menuitem="5" />
+    <MenuOption :menuitem="6" />
+    <MenuOption :menuitem="7" />
+    <MenuOption :menuitem="10" />
     <div class="separator"></div>
     <MenuOption :menuitem="8" />
-    <MenuOption :mentions="3" :menuitem="9" />
+    <MenuOption :menuitem="9" />
   </div>
 </template>
 <script lang="ts">

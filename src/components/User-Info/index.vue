@@ -2,27 +2,44 @@
 <template>
   <div class="container">
     <div class="profile">
-      <div class="avatar"></div>
-      <div class="userdata">
-        <strong>Ediberto Oliveira</strong>
-        <span>#8370</span>
-      </div>
-    </div>
-    <div class="actions">
-      <Mic :size="20" />
-      <HeadPhones :size="20" />
-      <Settings :size="20" />
+      <q-card dark class="apply-dark" square flat>
+        <q-tabs
+          v-model="tab"
+          dense
+          narrow-indicator
+          no-caps
+          class="text-white apply-dark"
+        >
+          <q-tab class="text-blue" name="house" label="House" />
+          <q-tab class="text-blue" name="stage" label="Stage" />
+        </q-tabs>
+        <q-separator />
+        <q-tab-panels v-model="tab" animated dark class="apply-dark">
+          <q-tab-panel name="house">
+            <!-- <div class="text-h6">Mails</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. -->
+            <div class="video-previewer" />
+          </q-tab-panel>
+
+          <q-tab-panel name="stage">
+            <div class="text-h6">Alarms</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </q-tab-panel>
+        </q-tab-panels>
+      </q-card>
     </div>
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
   name: 'UserInfo',
   components: {},
   setup() {
-    return {};
+    return {
+      tab: ref('house'),
+    };
   },
 });
 </script>
@@ -32,7 +49,7 @@ export default defineComponent({
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   padding: 10px;
   background: var(--quaternary);
   box-shadow: rgba(0, 0, 0, 0.2) 0 1px 0 0;
@@ -73,5 +90,17 @@ export default defineComponent({
       color: var(--white);
     }
   }
+}
+
+.apply-dark {
+  background-color: var(--primary);
+}
+
+.video-previewer {
+  min-width: 100%;
+  min-height: 100%;
+
+  width: 100%;
+  height: auto;
 }
 </style>

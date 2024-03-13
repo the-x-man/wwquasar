@@ -7,9 +7,17 @@
     }"
   >
     <img :src="svgurl" alt="discord" />
-    <div class="mentions" v-if="mentions">
+    <div class="mentions" v-if="mentions" alt="discord">
       {{ formattedCount }}
     </div>
+    <q-tooltip
+      anchor="center right"
+      self="center left"
+      :offset="[10, 10]"
+      class="bg-indigo"
+    >
+      <strong>{{ $t(tooltip) }}</strong>
+    </q-tooltip>
   </div>
 </template>
 <script>
@@ -39,7 +47,31 @@ export default defineComponent({
       }
     },
     svgurl() {
-      return `/public/menu/${this.menuitem}.svg`;
+      return `/menu/${this.menuitem}.svg`;
+    },
+    tooltip() {
+      switch (this.menuitem) {
+        case 2:
+          return 'general.cuelist';
+        case 3:
+          return 'general.bible';
+        case 4:
+          return 'general.song';
+        case 5:
+          return 'general.timer';
+        case 6:
+          return 'general.image';
+        case 7:
+          return 'general.video';
+        case 10:
+          return 'general.slides';
+        case 8:
+          return 'general.settings';
+        case 9:
+          return 'general.about';
+        default:
+          return '';
+      }
     },
   },
 });
